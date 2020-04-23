@@ -3,16 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Notificaciones web</title>
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 	<script src="js/push.min.js"></script>
+	<script src="js/serviceWorker.min.js"></script>
 </head>
 <body>
 	<script>
-		Push.create("Hola mundo",{
-			body: "Este es el cuerpo de la notificacion",
+		Push.create("ทดสอบแจ้งเตือน",{
+			body: "Test Notificacion",
 			icon: "img/logo.png",
 			//timeout: 4000,
 			onClick: function () {
-				window.location="https://nickersoft.github.io/push.js/";
+				window.location="https://naigolf.github.io/per-web/";
 				this.close();
 			}
 		});
